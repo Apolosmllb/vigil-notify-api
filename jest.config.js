@@ -1,6 +1,5 @@
 module.exports = {
-	testMatch: ["**/tests/**/*.test.ts"],
-	transform: {
-		"\\.ts$": "@swc/jest",
-	},
+  preset: "ts-jest",
+  testEnvironment: "node",
+  cacheDirectory: ".tmp/jestCache",
 };
